@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(mainRoutes)
 
 app.use((req, res) => {
-    res.send('página não encontrada!')
+    res.render('pages/404')
 })
 
 const PORT = process.env.PORT
